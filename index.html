@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/sass.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <nav class="nav">
+          <a href="./index.html" class="logo link">
+            <img class="logo-text" src="./img/logo.png" alt=""
+          /></a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a
+                href="#CALIBURN AK3"
+                class="site-nav__link site-nav__link link current"
+                >CALIBURN AK3</a
+              >
+            </li>
+
+            <li class="site-nav__item">
+              <a href="#CALIBURN AZ3" class="site-nav__link site-nav__link link"
+                >CALIBURN AZ3</a
+              >
+            </li>
+
+            <li class="site-nav__item">
+              <a href="#CALIBURN A3S" class="site-nav__link site-nav__link link"
+                >CALIBURN A3S</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <swiper-container
+        style="--swiper-navigation-color: #000; --swiper-pagination-color: #000"
+        class="mySwiper"
+        speed="800"
+        parallax="true"
+        pagination="true"
+        pagination-clickable="true"
+        navigation="true"
+      >
+        <div
+          slot="container-start"
+          class="parallax-bg"
+          style="background-image: url(./img/1.png)"
+          data-swiper-parallax="-20%"
+        ></div>
+
+        <swiper-slide>
+          <div class="content">
+            <div class="title" data-swiper-parallax="-600">
+              <img class="logo-img" src="./img/3.png" alt="" />
+            </div>
+            <div class="subtitle" data-swiper-parallax="-300">ПОД СИСТЕМА</div>
+            <div class="text-list">
+              <div class="text" data-swiper-parallax="-100">
+                <p>Світлова анімація та взаємодія у формі логотипу</p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>
+                  Портативність і зручність носіння завдяки прикріпленному
+                  ремінцю
+                </p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>15-хвилинна швидка зарядка</p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./img/2.png"
+            alt=""
+            class="image"
+            data-swiper-parallax="-100"
+          />
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="content">
+            <div class="title" data-swiper-parallax="-600">
+              <img class="logo-img" src="./img/4.png" alt="" />
+            </div>
+            <div class="subtitle" data-swiper-parallax="-300">ПОД СИСТЕМА</div>
+            <div class="text-list">
+              <div class="text" data-swiper-parallax="-100">
+                <p>Світлова анімація та взаємодія у формі логотипу</p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>Більш надійний спосіб вейпінгу</p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>3-кроковий механізм зарядки</p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./img/5.png"
+            alt=""
+            class="image"
+            data-swiper-parallax="-100"
+          />
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="content">
+            <div class="title" data-swiper-parallax="-600">
+              <img class="logo-img" src="./img/6.png" alt="" />
+            </div>
+            <div class="subtitle" data-swiper-parallax="-300">ПОД СИСТЕМА</div>
+            <div class="text-list">
+              <div class="text" data-swiper-parallax="-100">
+                <p>Елегантний зовнішній вигляд з тонким лазерним малюнком</p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>Світлова анімація у формі логотипу</p>
+              </div>
+              <div class="text" data-swiper-parallax="-100">
+                <p>Зручна заправка</p>
+              </div>
+            </div>
+          </div>
+
+          <img
+            src="./img/7.png"
+            alt=""
+            class="image-2"
+            data-swiper-parallax="-100"
+          />
+        </swiper-slide>
+      </swiper-container>
+    </section>
+
+    <section id="CALIBURN AK3">
+      <video
+        autoplay="autoplay"
+        id="videoBg"
+        loop="loop"
+        muted="muted"
+        width="100%"
+        height="auto"
+      >
+        <source src="./video/caliburn-ak3.mp4" type="video/mp4" />
+      </video>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+  </body>
+</html>
